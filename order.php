@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Макс Дев</title>
+    <title>Бекиш ИТ</title>
     <link rel="stylesheet" href="log_reg/php/autorithation/css/success.css">
 
 </head>

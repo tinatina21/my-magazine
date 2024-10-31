@@ -16,7 +16,7 @@
     <?php
         include("header.php");
         // Подключение к базе данных
-        $conn = new mysqli('127.0.0.1', 'root', '', 'Visitors');
+        $conn = new mysqli('localhost', 'root', 'root', 'Visitors');
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }

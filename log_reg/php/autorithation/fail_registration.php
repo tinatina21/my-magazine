@@ -27,7 +27,7 @@
         <script>
         function redirectToLoginPage() {
             // Перенаправление на другой HTML файл (например, login.html)
-            window.location.href = "/log_reg/register.html";
+            window.location.href = "/myshop/log_reg/register.html";
         }
         </script>
     </div>
