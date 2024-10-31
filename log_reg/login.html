@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма авторизации</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <style>
+        img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    </style>
+    <img class="displayed" width="280" height="280" src="https://img.icons8.com/color/480/password.png" alt="password"/>
+    <form class="form" action="./php/login.php" method="post">
+        <p class="form-title">Войдите в свою учётную запись</p>
+        <div class="input-container">
+            <input type="email" name="email" placeholder="Ваш адрес почты" required>
+        </div>
+        <div class="input-container">
+            <input type="password" name="password" placeholder="Ваш пароль" required>
+        </div>
+        <button type="submit" class="submit">Войти</button>
+        <p class="signup-link">Нет аккаунта? <a href="./register.html">Зарегистрируйтесь</a></p>
+    </form>
+    <script src="./js/login.js"></script>    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарегистрируйтесь</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <form class="form" action="./php/register.php" method="post" onsubmit="return validatePassword();">
+        <p class="title">Регистрация</p>
+        <p class="message">Зарегистрируйтесь сейчас и получите доступ к сайту Бекиш ИТ </p>
+        <div class="flex">
+            <label>
+                <input name="FirstName" required="" placeholder="" type="text" class="input">
+                <span>Имя</span>
+            </label>
+
+            <label>
+                <input name="LastName" required="" placeholder="" type="text" class="input">
+                <span>Фамилия</span>
+            </label>
+        </div>
+
+        <label>
+            <input name="email" required="" placeholder="" type="email" class="input">
+            <span>Ваша почта</span>
+        </label>
+
+        <label>
+            <input id="pass" name="password" required="" placeholder="" type="password" class="input">
+            <span class="psw">Ваш пароль</span>
+            <span class="toggle-password" onclick="togglePasswordVisibility('pass')">👁️</span>
+        </label>
+        <label>
+            <input id="conpass" name="ConfirmPassword" required="" placeholder="" type="password" class="input">
+            <span>Подтвердите пароль</span>
+            <span class="toggle-password" onclick="togglePasswordVisibility('conpass')">👁️</span>
+        </label>
+        <button class="submit">Подтвердить регистрацию</button>
+        <p class="signin">У вас уже есть аккаунт ? <a href="login.html">Войдите здесь</a> </p>
+    </form>
+    <script src="./js/register.js"></script>
+</body>
+</html>
